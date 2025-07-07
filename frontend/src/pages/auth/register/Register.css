@@ -1,0 +1,24 @@
+/* Register.css */
+
+.centered-form {
+  max-width: 400px;
+  margin: 100px auto; /* center vertically with spacing */
+  padding: 30px;
+  background-color: #f8f9fa; /* light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.centered-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #343a40; /* dark gray */
+}
+
+.centered-form .form-control {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 10px;
+}

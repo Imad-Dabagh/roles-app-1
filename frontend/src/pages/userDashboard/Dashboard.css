@@ -1,0 +1,102 @@
+/* Container like your Login page but wider */
+.centered-form {
+  max-width: 800px; /* wider container */
+  margin: 80px auto; /* vertically spaced */
+  padding: 30px 40px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.centered-form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+/* Table adjustments */
+table {
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 0 10px; /* add vertical spacing between rows */
+}
+
+thead tr {
+  background-color: #343a40; /* dark header */
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+tbody tr {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Cells */
+td, th {
+  padding: 15px 20px !important; /* more padding */
+  vertical-align: middle !important;
+}
+
+/* Actions column */
+td:last-child {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Buttons */
+button.btn-outline-primary,
+button.btn-outline-danger {
+  min-width: 70px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+button.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .centered-form {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  td, th {
+    padding: 12px 10px !important;
+  }
+
+  td:last-child {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  button.btn-outline-primary,
+  button.btn-outline-danger {
+    width: 100%;
+    min-width: unset;
+  }
+}
