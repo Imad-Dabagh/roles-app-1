@@ -69,12 +69,17 @@ Admin panels, SaaS dashboards, CRMs, internal tools, or any multi-role applicati
 
 1. `cd backend && npm install && npm run dev`  
 2. `cd frontend && npm install && npm run dev`  
-3. Configure your `.env` in `backend` with Mongo URI and JWT secrets
+
+## 🔧 Environment Setup
+
+Create a `.env` file in the `/backend` folder based on the provided `.env.example`:
+
+```bash
+cp backend/.env.example backend/.env
 
 ---
 
 ## 📸 Preview
-
 
 
 ---
