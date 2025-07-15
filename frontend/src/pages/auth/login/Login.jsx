@@ -26,7 +26,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
 
     try {
       const loggedUser = await login(formData); // Call the login function from AuthContext with form data

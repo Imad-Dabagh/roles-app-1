@@ -138,7 +138,7 @@ const logoutUser = (req, res) => {
 // =========== Refresh Token Handler ===========
 
 const refreshAccessToken = async (req, res) => {
-  console.log('Cookies:', req.cookies); // Add this line
+  // console.log('Cookies:', req.cookies); // Add this line
   try {
     const refreshToken = req.cookies.refreshToken;
     if (!refreshToken) {
